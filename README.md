@@ -19,3 +19,5 @@ This project is part of Task 3 of my Data Science Internship at CodTech IT Solut
 A trained model is integrated into a Flask web app, which is hosted on Render, allowing users to make predictions through a user-friendly interface. This project showcases my ability to apply data science concepts in a practical, production-ready manner.
 
 # OUTPUT 
+
+(https://github.com/user-attachments/assets/392959f4-ce08-4c66-8249-4dc54700d771)
