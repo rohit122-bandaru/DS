@@ -1,0 +1,64 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Titanic Survival Predictor</title>
+  <style>
+    body { font-family: Arial; max-width: 600px; margin: 50px auto; }
+    input, select { width: 100%; padding: 10px; margin: 10px 0; }
+    button { padding: 10px 20px; background: #007BFF; color: white; border: none; }
+    h2 { color: #333; }
+  </style>
+</head>
+<body>
+  <h2>🚢 Titanic Survival Predictor</h2>
+  <form action="/predict_ui" method="post">
+    <label>Passenger Class:</label>
+    <select name="Pclass">
+      <option value="1">1st Class</option>
+      <option value="2">2nd Class</option>
+      <option value="3">3rd Class</option>
+    </select>
+
+    <label>Sex:</label>
+    <select name="Sex">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+
+    <label>Age:</label>
+    <input type="number" name="Age" step="any" required>
+
+    <label>Siblings/Spouse Aboard:</label>
+    <input type="number" name="SibSp" required>
+
+    <label>Parents/Children Aboard:</label>
+    <input type="number" name="Parch" required>
+
+    <label>Fare:</label>
+    <input type="number" name="Fare" step="any" required>
+
+    <label>Embarked:</label>
+    <select name="Embarked">
+      <option value="S">Southampton</option>
+      <option value="C">Cherbourg</option>
+      <option value="Q">Queenstown</option>
+    </select>
+
+    <label>Title:</label>
+    <select name="Title">
+      <option value="Mr">Mr</option>
+      <option value="Mrs">Mrs</option>
+      <option value="Miss">Miss</option>
+      <option value="Master">Master</option>
+      <option value="Rare">Rare</option>
+    </select>
+
+    <button type="submit">Predict Survival</button>
+  </form>
+
+  {% if prediction %}
+    <h3>Prediction: {{ prediction }}</h3>
+  {% endif %}
+</body>
+</html>
