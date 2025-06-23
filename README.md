@@ -20,4 +20,4 @@ A trained model is integrated into a Flask web app, which is hosted on Render, a
 
 # OUTPUT 
 
-https://github.com/user-attachments/assets/392959f4-ce08-4c66-8249-4dc54700d771
+![Image](https://github.com/user-attachments/assets/619ef392-ff3f-4aff-b4b7-263f803ec82f)
